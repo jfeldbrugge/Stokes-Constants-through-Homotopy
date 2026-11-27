@@ -46,31 +46,14 @@ through Homotopy</em></h1>
 Howls</p>
 </header>
 <p>This page accompanies the paper <em>Stokes Constants through
-Homotopy</em> [arXiv link to follow]. It animates the higher-order
-Stokes phenomenon of Figure 1, the rotation of the steepest descent
-manifolds of Figure 3, the homotopy continuation of the Stokes constants
-for the examples of Section V, Figures 4 to 8 of the paper, and the
-Stokes transition in the complex plane of Figure 9, for the Stokes
-constants <span class="math inline">\(1\)</span> and <span
-class="math inline">\(2\)</span>.</p>
-<p><strong>How to read the animations.</strong> The homotopy deforms a
-factorisable reference integral, whose Stokes constants follow from
-one-dimensional integrals, into the integral of interest as the
-parameter <span class="math inline">\(\lambda\)</span> runs from <span
-class="math inline">\(0\)</span> to <span
-class="math inline">\(1\)</span>. Every saddle point maps to a Borel
-singularity <span class="math inline">\(t_j = -\mathrm{i}
-f(\boldsymbol{x}_j)\)</span>, which moves through the Borel plane along
-a coloured curve, one colour per saddle point. The red edges join
-adjacent saddle points, with widths proportional to the magnitude of the
-Stokes constant <span class="math inline">\(|K_{jl}|\)</span>. A Stokes
-constant changes when the Borel singularity of a third saddle point
-crosses the segment between two others, a higher-order Stokes
-phenomenon. The black dots, labelled as in the paper, mark the saddle
-points that reach the integral of interest. The grey dots mark the
-saddle points that fly off to infinity, with their edges in pale red.
-All animations use the parameter <span class="math inline">\(\gamma =
-e^{\mathrm{i}\pi/5}\)</span> of the paper.</p>
+Homotopy</em> [arXiv link to follow]. Three of its animations illustrate
+the theory: the higher-order Stokes phenomenon of Figure 1, the rotation
+of the steepest descent manifolds of Figure 3, and the Stokes transition
+in the complex plane of Figure 9, for the Stokes constants <span
+class="math inline">\(1\)</span> and <span
+class="math inline">\(2\)</span>. The others follow the homotopy
+continuation of the Stokes constants for the examples of Section V,
+Figures 4 to 8 of the paper.</p>
 <hr />
 <h2 id="the-higher-order-stokes-phenomenon">The higher-order Stokes
 phenomenon</h2>
@@ -109,13 +92,15 @@ of <span class="math inline">\(k =
 -\mathrm{i}\,e^{\mathrm{i}\pi\alpha}\)</span> runs once around the
 origin, from <span class="math inline">\(\alpha = 0\)</span> to <span
 class="math inline">\(2\)</span>. The background shows <span
-class="math inline">\(\mathrm{Re}[-k f]\)</span>. The steepest descent
-manifold of saddle point <span class="math inline">\(j\)</span> runs
-into saddle point <span class="math inline">\(l\)</span> when <span
+class="math inline">\(\mathrm{Re}[-k f]\)</span>, red where the
+integrand decays and blue where it grows, so the steepest descent
+manifolds run into the red regions. The steepest descent manifold of the
+saddle point <span class="math inline">\(x_j\)</span> runs into <span
+class="math inline">\(x_l\)</span> when <span
 class="math inline">\(k(f_l - f_j)\)</span> is real and positive, at a
 Stokes line. The manifold then flashes red, and the edge between <span
-class="math inline">\(j\)</span> and <span
-class="math inline">\(l\)</span> appears in the Borel plane on the
+class="math inline">\(x_j\)</span> and <span
+class="math inline">\(x_l\)</span> appears in the Borel plane on the
 right. By symmetry, the Stokes lines arrive in pairs. After one
 rotation, every pair of saddle points has seen each other, and the
 adjacency graph is complete.</p>
@@ -130,6 +115,24 @@ of k rotates</a></video>
 phase of k rotates</figcaption>
 </figure>
 <hr />
+<p><strong>How to read the homotopy animations.</strong> The homotopy
+deforms a factorisable reference integral, whose Stokes constants follow
+from one-dimensional integrals, into the integral of interest as the
+parameter <span class="math inline">\(\lambda\)</span> runs from <span
+class="math inline">\(0\)</span> to <span
+class="math inline">\(1\)</span>. Every saddle point maps to a Borel
+singularity <span class="math inline">\(t_j = -\mathrm{i}
+f(\boldsymbol{x}_j)\)</span>, which moves through the Borel plane along
+a coloured curve, one colour per saddle point. The red edges join
+adjacent saddle points, with widths proportional to the magnitude of the
+Stokes constant <span class="math inline">\(|K_{jl}|\)</span>. A Stokes
+constant changes when the Borel singularity of a third saddle point
+crosses the segment between two others, a higher-order Stokes
+phenomenon. The black dots, labelled as in the paper, mark the saddle
+points that reach the integral of interest. The grey dots mark the
+saddle points that fly off to infinity, with their edges in pale red.
+These animations use the parameter <span class="math inline">\(\gamma =
+e^{\mathrm{i}\pi/5}\)</span> of the paper.</p>
 <h2 id="the-swallowtail-catastrophe">The swallowtail catastrophe</h2>
 <p><strong>Description:</strong> The diffraction integral of the
 swallowtail catastrophe, <span class="math inline">\(\Psi =
@@ -179,9 +182,9 @@ class="math inline">\(f = (x - y)^2/2 + \beta/(1 + x^2)\)</span> for
 polynomial exponent in three variables. Of the <span
 class="math inline">\(48\)</span> saddle points of the reference
 integral, <span class="math inline">\(43\)</span> fly off to infinity.
-On their way out, they cross the segments between the five survivors and
-leave Stokes constants of magnitude <span
-class="math inline">\(2\)</span> behind.</p>
+Along the way, higher-order Stokes phenomena build Stokes constants of
+magnitude <span class="math inline">\(2\)</span>, which the reference
+integral lacks.</p>
 <p><strong>Referenced in:</strong> Section V C / Figure 6</p>
 <p><strong>Animation:</strong> <a
 href="figures/1DLens.mp4">1DLens.mp4</a></p>
@@ -255,8 +258,9 @@ of Figure 9 of the paper. Both exponents have the saddle points <span
 class="math inline">\(x_1 = -1\)</span> and <span
 class="math inline">\(x_2 = 1\)</span>. The background shows <span
 class="math inline">\(\mathrm{Re}[\mathrm{i}kf]\)</span>, red where the
-integrand grows and blue where it decays. The red curves, with arrows,
-show the contour as a sum of steepest descent manifolds <span
+integrand grows and blue where it decays, the reverse of the colours in
+the rotation animation above. The red curves, with arrows, show the
+contour as a sum of steepest descent manifolds <span
 class="math inline">\(\mathcal{J}_j\)</span>, a double line marks a
 manifold counted twice, the grey curve the irrelevant manifold of <span
 class="math inline">\(x_1\)</span>, and the dashed curves the steepest
@@ -276,9 +280,13 @@ type, the steepest descent manifold of <span
 class="math inline">\(x_2\)</span> runs into <span
 class="math inline">\(x_1\)</span> along a single path, and the contour
 becomes <span class="math inline">\(\mathcal{C} = \mathcal{J}_2 -
-\mathcal{J}_1\)</span>. For a polynomial exponent in one variable, at
-most one steepest descent path joins two saddle points, and <span
-class="math inline">\(|K_{jl}| \leq 1\)</span>.</p>
+\mathcal{J}_1\)</span>. The sign follows the orientation of <span
+class="math inline">\(\mathcal{J}_1\)</span>, and the magnitude <span
+class="math inline">\(1\)</span> is the Stokes constant. For a
+polynomial exponent in one variable, at most one steepest descent path
+joins two saddle points when no third critical value lies on the segment
+between them, and then <span class="math inline">\(|K_{jl}| \leq
+1\)</span>.</p>
 <p><strong>Animation:</strong> <a
 href="figures/StokesTransition_K1.mp4">StokesTransition_K1.mp4</a></p>
 <figure>
