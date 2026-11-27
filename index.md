@@ -16,7 +16,7 @@ include-before:
     ```
 ---
 
-This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link to follow]. It animates the homotopy continuation of the Stokes constants for the examples of Section V, Figures 4 to 8 of the paper.
+This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link to follow]. It animates the homotopy continuation of the Stokes constants for the examples of Section V, Figures 4 to 8 of the paper, and the Stokes transition in the complex plane of Figure 9, for the Stokes constants $1$ and $2$.
 
 **How to read the animations.** The homotopy deforms a factorisable reference integral, whose Stokes constants follow from one-dimensional integrals, into the integral of interest as the parameter $\lambda$ runs from $0$ to $1$. Every saddle point maps to a Borel singularity $t_j = -\mathrm{i} f(\boldsymbol{x}_j)$, which moves through the Borel plane along a coloured curve, one colour per saddle point. The red edges join adjacent saddle points, with widths proportional to the magnitude of the Stokes constant $|K_{jl}|$. A Stokes constant changes when the Borel singularity of a third saddle point crosses the segment between two others, a higher-order Stokes phenomenon. The black dots, labelled as in the paper, mark the saddle points that reach the integral of interest. The grey dots mark the saddle points that fly off to infinity, with their edges in pale red. All animations use the parameter $\gamma = e^{\mathrm{i}\pi/5}$ of the paper.
 
