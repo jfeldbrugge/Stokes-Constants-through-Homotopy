@@ -16,9 +16,33 @@ include-before:
     ```
 ---
 
-This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link to follow]. It animates the homotopy continuation of the Stokes constants for the examples of Section V, Figures 4 to 8 of the paper, and the Stokes transition in the complex plane of Figure 9, for the Stokes constants $1$ and $2$.
+This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link to follow]. It animates the higher-order Stokes phenomenon of Figure 1, the rotation of the steepest descent manifolds of Figure 3, the homotopy continuation of the Stokes constants for the examples of Section V, Figures 4 to 8 of the paper, and the Stokes transition in the complex plane of Figure 9, for the Stokes constants $1$ and $2$.
 
 **How to read the animations.** The homotopy deforms a factorisable reference integral, whose Stokes constants follow from one-dimensional integrals, into the integral of interest as the parameter $\lambda$ runs from $0$ to $1$. Every saddle point maps to a Borel singularity $t_j = -\mathrm{i} f(\boldsymbol{x}_j)$, which moves through the Borel plane along a coloured curve, one colour per saddle point. The red edges join adjacent saddle points, with widths proportional to the magnitude of the Stokes constant $|K_{jl}|$. A Stokes constant changes when the Borel singularity of a third saddle point crosses the segment between two others, a higher-order Stokes phenomenon. The black dots, labelled as in the paper, mark the saddle points that reach the integral of interest. The grey dots mark the saddle points that fly off to infinity, with their edges in pale red. All animations use the parameter $\gamma = e^{\mathrm{i}\pi/5}$ of the paper.
+
+---
+
+## The higher-order Stokes phenomenon
+
+**Description:** The sketch of Figure 1 in motion. Three Borel singularities, with their branch cuts (grey zigzag lines) and the labels of the Riemann sheets the cuts connect, move through the Borel plane. At first, the three saddle points see each other (red lines). The singularity of saddle point $1$ then moves down, while those of saddle points $2$ and $3$ move up, until the three line up. At this higher-order Stokes phenomenon, the branch cut of saddle point $1$ moves in between the branch points of $2$ and $3$. Saddle point $1$ then obscures their vision, and $2$ and $3$ no longer see each other.
+
+**Referenced in:** Section II B / Figure 1
+
+**Animation:** [HigherOrderStokes.mp4](figures/HigherOrderStokes.mp4)
+
+![The higher-order Stokes phenomenon](figures/HigherOrderStokes.mp4){width=70%}
+
+---
+
+## Rotating around the origin
+
+**Description:** The left panel of Figure 3 in motion. For the integral $\int e^{-k(x^6/6 - x)}\,\mathrm{d}x$, the steepest descent manifolds (solid) and ascent manifolds (dashed) of the five saddle points rotate as the phase of $k = -\mathrm{i}\,e^{\mathrm{i}\pi\alpha}$ runs once around the origin, from $\alpha = 0$ to $2$. The background shows $\mathrm{Re}[-k f]$. The steepest descent manifold of saddle point $j$ runs into saddle point $l$ when $k(f_l - f_j)$ is real and positive, at a Stokes line. The manifold then flashes red, and the edge between $j$ and $l$ appears in the Borel plane on the right. By symmetry, the Stokes lines arrive in pairs. After one rotation, every pair of saddle points has seen each other, and the adjacency graph is complete.
+
+**Referenced in:** Section III A / Figure 3
+
+**Animation:** [RotatingK.mp4](figures/RotatingK.mp4)
+
+![The steepest descent manifolds as the phase of k rotates](figures/RotatingK.mp4){width=100%}
 
 ---
 
