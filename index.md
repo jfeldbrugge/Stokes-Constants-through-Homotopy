@@ -16,7 +16,7 @@ include-before:
     ```
 ---
 
-This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link to follow]. Three of its animations illustrate the theory: the higher-order Stokes phenomenon of Figure 1, the rotation of the steepest descent manifolds of Figure 3, and the Stokes transition in the complex plane of Figure 9, for the Stokes constants $1$ and $2$. The others follow the homotopy continuation of the Stokes constants for the examples of Section V, Figures 4 to 8 of the paper.
+This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link to follow]. Three of its animations illustrate the theory: the higher-order Stokes phenomenon of Figure 1, the rotation of the steepest descent manifolds of Figure 3, and the Stokes transition in the complex plane of Figure 7, for the Stokes constants $1$ and $2$. The others follow the homotopy continuation of the Stokes constants for the examples of Section V, Figures 4, 5, 6, 9, 11 and 12 of the paper.
 
 ---
 
@@ -70,11 +70,55 @@ This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link 
 
 ---
 
+## The Hankel function
+
+**Description:** The Hankel function of order one, $\int_0^\infty e^{\mathrm{i}k(x + 1/x)}\,\mathrm{d}x$, lifted to the polynomial exponent $(1 + x_1^2)\,x_2 + x_3(x_2 x_1 - 1)$. Two of the eight saddle points of the reference integral reach the saddle points $x = \pm 1$, with the Borel singularities $t_1 = 2\mathrm{i}$ and $t_2 = -2\mathrm{i}$. Near $\lambda \approx 0.83$, two escaping saddle points cross the segment between the survivors at the same moment, at opposite points, and the Stokes constant jumps from $0$ to $2$.
+
+**Referenced in:** Section V C / Figure 6
+
+**Animation:** [Hankel.mp4](figures/Hankel.mp4)
+
+![Homotopy continuation for the Hankel function](figures/Hankel.mp4){width=100%}
+
+---
+
+## The Stokes transition in the complex plane
+
+**Description:** What does a Stokes constant do to an integral? These two animations rotate the phase of $k$ across the Stokes line $\arg k = -\pi/2$ and follow the integration contour $\mathcal{C}$ in the complex $x$-plane, in the style of Figure 7 of the paper. Both exponents have the saddle points $x_1 = -1$ and $x_2 = 1$. The background shows $\mathrm{Re}[\mathrm{i}kf]$, red where the integrand grows and blue where it decays, the reverse of the colours in the rotation animation above. The red curves, with arrows, show the contour as a sum of steepest descent manifolds $\mathcal{J}_j$, a double line marks a manifold counted twice, the grey curve the irrelevant manifold of $x_1$, and the dashed curves the steepest ascent manifolds. Before the Stokes line, the contour equals $\mathcal{J}_2$ and $x_1$ stays irrelevant. On the line, the steepest descent manifold of $x_2$ runs into $x_1$. Beyond it, $x_1$ turns relevant with a multiplicity equal to the magnitude of the Stokes constant. The animation finds this multiplicity in every frame from the valleys in which the ends of the oriented manifolds lie, with every manifold oriented as the continuation of its asymptotic series demands.
+
+**Stokes constant 1.** For the cubic exponent $f = x - x^3/3$, the integral of the Airy type, the steepest descent manifold of $x_2$ runs into $x_1$ along a single path, and the contour becomes $\mathcal{C} = \mathcal{J}_2 - \mathcal{J}_1$. The sign follows the orientation of $\mathcal{J}_1$, and the magnitude $1$ is the Stokes constant. For a polynomial exponent in one variable, at most one steepest descent path joins two saddle points when no third critical value lies on the segment between them, and then $|K_{jl}| \leq 1$.
+
+**Animation:** [StokesTransition_K1.mp4](figures/StokesTransition_K1.mp4)
+
+![Stokes transition with Stokes constant 1](figures/StokesTransition_K1.mp4){width=70%}
+
+**Stokes constant 2.** For the Hankel function, $f = x + 1/x$, the steepest descent manifold of $x_2$ runs into $x_1$ along both halves of the unit circle, on either side of the pole at $x = 0$, and the contour becomes $\mathcal{C} = \mathcal{J}_2 + 2\mathcal{J}_1$. The pole keeps the two paths from cancelling.
+
+**Referenced in:** Section V C / Figure 7
+
+**Animation:** [StokesTransition_K2.mp4](figures/StokesTransition_K2.mp4)
+
+![Stokes transition with Stokes constant 2](figures/StokesTransition_K2.mp4){width=70%}
+
+---
+
+## The mirror of CP²
+
+**Description:** The Landau–Ginzburg mirror of the complex projective plane, $\int e^{\mathrm{i}kf}\,\mathrm{d}x\,\mathrm{d}y$ with $f = x + y + 1/(xy)$, lifted to the polynomial exponent $P = x + y + w + s(wxy - 1)$ in four variables. Of the $81$ saddle points of the reference integral, $78$ fly off to infinity. The remaining three reach the saddle points $x = y = \omega$, with $\omega^3 = 1$, whose Borel singularities form an equilateral triangle. Through a sequence of higher-order Stokes phenomena, the homotopy builds the Stokes constants of magnitude $3$ between every pair from the constants $\pm 1$ of the reference integral.
+
+**Referenced in:** Section V D / Figure 9
+
+**Animation:** [CP2.mp4](figures/CP2.mp4)
+
+![Homotopy continuation for the mirror of CP²](figures/CP2.mp4){width=100%}
+
+---
+
 ## The one-dimensional Lorentzian lens
 
 **Description:** The Kirchhoff–Fresnel integral of a one-dimensional Lorentzian lens, with the rational exponent $f = (x - y)^2/2 + \beta/(1 + x^2)$ for $y = \beta = 1$, lifted to a polynomial exponent in three variables. Of the $48$ saddle points of the reference integral, $43$ fly off to infinity. Along the way, higher-order Stokes phenomena build Stokes constants of magnitude $2$, which the reference integral lacks.
 
-**Referenced in:** Section V C / Figure 6
+**Referenced in:** Section V E / Figure 11
 
 **Animation:** [1DLens.mp4](figures/1DLens.mp4)
 
@@ -86,40 +130,9 @@ This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link 
 
 **Description:** The two-dimensional Lorentzian lens, $f = |\boldsymbol{x} - \boldsymbol{y}|^2/2 + \beta/(1 + x_1^2 + 2x_2^2)$ for $\boldsymbol{y} = (1, 1)$ and $\beta = 1$, lifted to a polynomial exponent in four variables. Of the $192$ saddle points of the reference integral, $9$ survive. Of their $36$ pairs, $31$ end up adjacent, and $7$ carry Stokes constants $\pm 2$.
 
-**Referenced in:** Section V C / Figure 7
+**Referenced in:** Section V E / Figure 12
 
 **Animation:** [2DLens.mp4](figures/2DLens.mp4)
 
 ![Homotopy continuation for the two-dimensional Lorentzian lens](figures/2DLens.mp4){width=100%}
 
----
-
-## The Hankel function
-
-**Description:** The Hankel function of order one, $\int_0^\infty e^{\mathrm{i}k(x + 1/x)}\,\mathrm{d}x$, lifted to the polynomial exponent $(1 + x_1^2)\,x_2 + x_3(x_2 x_1 - 1)$. Two of the eight saddle points of the reference integral reach the saddle points $x = \pm 1$, with the Borel singularities $t_1 = 2\mathrm{i}$ and $t_2 = -2\mathrm{i}$. Near $\lambda \approx 0.83$, two escaping saddle points cross the segment between the survivors at the same moment, at opposite points, and the Stokes constant jumps from $0$ to $2$.
-
-**Referenced in:** Section V D / Figure 8
-
-**Animation:** [Hankel.mp4](figures/Hankel.mp4)
-
-![Homotopy continuation for the Hankel function](figures/Hankel.mp4){width=100%}
-
----
-
-## The Stokes transition in the complex plane
-
-**Description:** What does a Stokes constant do to an integral? These two animations rotate the phase of $k$ across the Stokes line $\arg k = -\pi/2$ and follow the integration contour $\mathcal{C}$ in the complex $x$-plane, in the style of Figure 9 of the paper. Both exponents have the saddle points $x_1 = -1$ and $x_2 = 1$. The background shows $\mathrm{Re}[\mathrm{i}kf]$, red where the integrand grows and blue where it decays, the reverse of the colours in the rotation animation above. The red curves, with arrows, show the contour as a sum of steepest descent manifolds $\mathcal{J}_j$, a double line marks a manifold counted twice, the grey curve the irrelevant manifold of $x_1$, and the dashed curves the steepest ascent manifolds. Before the Stokes line, the contour equals $\mathcal{J}_2$ and $x_1$ stays irrelevant. On the line, the steepest descent manifold of $x_2$ runs into $x_1$. Beyond it, $x_1$ turns relevant with a multiplicity equal to the magnitude of the Stokes constant. The animation finds this multiplicity in every frame from the valleys in which the ends of the oriented manifolds lie, with every manifold oriented as the continuation of its asymptotic series demands.
-
-**Stokes constant 1.** For the cubic exponent $f = x - x^3/3$, the integral of the Airy type, the steepest descent manifold of $x_2$ runs into $x_1$ along a single path, and the contour becomes $\mathcal{C} = \mathcal{J}_2 - \mathcal{J}_1$. The sign follows the orientation of $\mathcal{J}_1$, and the magnitude $1$ is the Stokes constant. For a polynomial exponent in one variable, at most one steepest descent path joins two saddle points when no third critical value lies on the segment between them, and then $|K_{jl}| \leq 1$.
-
-**Animation:** [StokesTransition_K1.mp4](figures/StokesTransition_K1.mp4)
-
-![Stokes transition with Stokes constant 1](figures/StokesTransition_K1.mp4){width=70%}
-
-**Stokes constant 2.** For the Hankel function, $f = x + 1/x$, the steepest descent manifold of $x_2$ runs into $x_1$ along both halves of the unit circle, on either side of the pole at $x = 0$, and the contour becomes $\mathcal{C} = \mathcal{J}_2 + 2\mathcal{J}_1$. The pole keeps the two paths from cancelling.
-
-**Referenced in:** Section V D / Figure 9
-
-**Animation:** [StokesTransition_K2.mp4](figures/StokesTransition_K2.mp4)
-
-![Stokes transition with Stokes constant 2](figures/StokesTransition_K2.mp4){width=70%}
