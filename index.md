@@ -79,3 +79,23 @@ This page accompanies the paper *Stokes Constants through Homotopy* [arXiv link 
 **Animation:** [Hankel.mp4](figures/Hankel.mp4)
 
 ![Homotopy continuation for the Hankel function](figures/Hankel.mp4){width=100%}
+
+---
+
+## The Stokes transition in the complex plane
+
+**Description:** What does a Stokes constant do to an integral? These two animations rotate the phase of $k$ across the Stokes line $\arg k = -\pi/2$ and follow the integration contour $\mathcal{C}$ in the complex $x$-plane, in the style of Figure 9 of the paper. Both exponents have the saddle points $x_1 = -1$ and $x_2 = 1$. The background shows $\mathrm{Re}[\mathrm{i}kf]$, red where the integrand grows and blue where it decays. The red curves, with arrows, show the contour as a sum of steepest descent manifolds $\mathcal{J}_j$, a double line marks a manifold counted twice, the grey curve the irrelevant manifold of $x_1$, and the dashed curves the steepest ascent manifolds. Before the Stokes line, the contour equals $\mathcal{J}_2$ and $x_1$ stays irrelevant. On the line, the steepest descent manifold of $x_2$ runs into $x_1$. Beyond it, $x_1$ turns relevant with a multiplicity equal to the magnitude of the Stokes constant. The animation finds this multiplicity in every frame from the valleys in which the ends of the oriented manifolds lie, with every manifold oriented as the continuation of its asymptotic series demands.
+
+**Stokes constant 1.** For the cubic exponent $f = x - x^3/3$, the integral of the Airy type, the steepest descent manifold of $x_2$ runs into $x_1$ along a single path, and the contour becomes $\mathcal{C} = \mathcal{J}_2 - \mathcal{J}_1$. For a polynomial exponent in one variable, at most one steepest descent path joins two saddle points, and $|K_{jl}| \leq 1$.
+
+**Animation:** [StokesTransition_K1.mp4](figures/StokesTransition_K1.mp4)
+
+![Stokes transition with Stokes constant 1](figures/StokesTransition_K1.mp4){width=70%}
+
+**Stokes constant 2.** For the Hankel function, $f = x + 1/x$, the steepest descent manifold of $x_2$ runs into $x_1$ along both halves of the unit circle, on either side of the pole at $x = 0$, and the contour becomes $\mathcal{C} = \mathcal{J}_2 + 2\mathcal{J}_1$. The pole keeps the two paths from cancelling.
+
+**Referenced in:** Section V D / Figure 9
+
+**Animation:** [StokesTransition_K2.mp4](figures/StokesTransition_K2.mp4)
+
+![Stokes transition with Stokes constant 2](figures/StokesTransition_K2.mp4){width=70%}
